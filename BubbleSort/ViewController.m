@@ -24,7 +24,7 @@
         [self.objArray addObject:@(a)];
     }
     
-    NSLog(@"self.objArray = %@",self.objArray);
+    NSLog(@"15个100以内的随机数 = %@", [self.objArray componentsJoinedByString:@","]);
     
     [self bubbleDescendingOrderSortWithArray:self.objArray];
     [self bubbleAscendingOrderSortWithArray:self.objArray];
@@ -57,7 +57,8 @@
             }
         }
     }
-    NSLog(@"冒泡降序排序后结果：%@", descendingArr);
+//    NSLog(@"冒泡降序排序后结果：%@", descendingArr);
+    NSLog(@"冒泡降序排序后结果：%@", [descendingArr componentsJoinedByString:@","]);
 }
 
 #pragma mark - 冒泡升序排序
@@ -72,7 +73,9 @@
             }
         }
     }
-    NSLog(@"冒泡升序排序后结果：%@", ascendingArr);
+//    NSLog(@"冒泡升序排序后结果：%@", ascendingArr);
+    NSLog(@"冒泡升序排序后结果：%@", [ascendingArr componentsJoinedByString:@","]);
+
 }
 
 
